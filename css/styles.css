@@ -1,0 +1,384 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 35px;
+    
+  }
+  
+ 
+  .grid-container {
+    display: grid;
+    grid-template-columns:20px auto auto auto auto 20px ;
+    grid-template-areas: 
+      'left header header header header right ' 
+      'left middle middle middle middle right ' 
+      ' left footer footer footer footer right ';
+    
+  } 
+  
+  .middle
+   {
+    height: auto; 
+  }
+  
+  
+  .left {
+    grid-area: left;
+    position: relative;
+
+
+  }
+  
+  .middle {
+    grid-area: middle;
+  }
+  
+  .right {
+    grid-area: right;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+  
+ 
+  .brand{
+    float: left;
+  }
+  .topnav {
+    float: right;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 15px;
+    
+  }
+  
+  .topnav a {
+    float: left;
+    
+    color: #000000;
+    text-align: center;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+   
+    color: black;
+    font-weight: bold;
+  }
+  
+  .topnav a.navbutton {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+  }
+  .topnav a.navbutton:hover {
+    background-color: white;
+    border: 1px black solid;
+  
+  }
+  #slider
+  {
+    background-image: url('/img_slider.jpg');
+    
+    display: flex;
+  
+    flex-direction: column;
+    height: 470px;
+  }
+  #virtual
+  {
+    background-image: url('/virtual reality.jpg');
+    background-size: 100% 100%;
+    width: 300px;
+    height: 235px;
+    margin-left: auto;
+    position: relative;
+    color: #ffffff;
+}
+
+#virtual:hover {
+  background-image: linear-gradient(rgba(251, 255, 37, 0.651),rgba(251, 255, 25, 0.61)), url('/virtual reality.jpg');
+  color: #000000;
+}
+  #estate
+  {
+    background-image: url('/real estate video.jpg');
+    width: 300px;
+    height: 235px;
+    margin-left: auto;
+    color: #ffffff;
+    position: relative;
+
+  }
+  #estate:hover
+  {
+    background-image: linear-gradient(rgba(251, 255, 37, 0.651),rgba(251, 255, 25, 0.61)), url('/real estate video.jpg');
+    color: #000000;
+  }
+  .textslider
+  {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    text-align: center;
+    
+  }
+  .box
+  {
+    
+    padding: 20px;
+    
+  }
+  #imgcube
+  {
+    width:40px;
+  }
+  #imgback
+  {
+    width:20px;
+
+
+  }
+  .title
+  {
+    color:yellow
+  }
+  .rendering
+  {
+    text-align: left;
+    background:linear-gradient(185deg, black, black 80%, lightgray 20%, lightgray);
+    color: white;
+    height: 500px;
+  }
+  .boxbutton
+  {
+    text-align: right;
+    margin-top: 50px;
+  }
+  .button
+  {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 10px 80px;
+    border-radius: 5%;
+    border: none;
+  }
+  .button:hover
+  {
+    background-color: white;
+    border: 1px black solid;
+
+  }
+  .nav
+  {
+   text-align: center;
+   background-color: lightgray;
+   padding: 20px;
+
+  }
+  .nav ul{
+    list-style-type: none;
+  }
+  .nav li{
+    display: inline;
+
+  }
+  .nav li a{
+    text-decoration: none ;
+    color: black;
+  }
+  .nav li a:hover
+  {
+    font-weight: bold;
+
+  }
+ 
+  .list-team
+  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+
+  }
+  .list-team-item
+  {
+     margin-top: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border: 1px solid thistle;
+    padding: 10px;
+    
+  }
+  .imgteam
+  {
+    border-radius: 50%;
+  }
+ 
+  .profile
+  { 
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid thistle;
+    padding: 20px;
+    margin: 20px;
+  }
+
+
+
+
+  
+  .rows
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .rows > div
+  { 
+    margin: 50px;
+    text-align: left;
+    width: 200px;
+    
+  }
+  #imgfooter
+  {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+  }
+
+  .social
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+  }
+  .social > div
+  { 
+    margin: 10px;
+    text-align: center
+  }
+    
+  .imgsocial
+  {
+    width: 40px;
+  }
+
+  .vertical
+  {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 500px;
+    font-size: 12px;
+  }
+  #terminos
+  {
+    color: yellow;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  /*carousel*/
+  
+#i1, #i2, #i3, #i4, #i5{ display: none;}
+
+.container{
+		margin: 0 auto;
+		margin-top: 20px;
+		position: relative;
+		width: 80%;
+		height: 600px;
+		padding-bottom: 38%;
+    user-select: none;
+    text-align:left;
+	}
+
+	.container .slide_img{
+		position: absolute;
+		width: 100%;;
+		height: 470px;
+	}
+	.container .slide_img img{
+		width: inherit;
+		height: inherit;
+	}
+
+	 .prev, .next{
+		width: 50px;
+		position: absolute;
+    bottom:0; 
+  
+    height: 50px;
+		background-color: black;
+		color:rgba(244, 244, 244,.9);
+		z-index: 99;
+		transition: .45s;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.next{right:20px;}
+	.prev{right:70px;}
+
+	label span{
+    position: absolute;
+  
+		font-size: 50pt;
+    top: 20px;
+    right:10px;
+	 	transform: translateY(-50%);
+	}
+
+	.prev:hover, .next:hover{
+		transition: .3s;
+		background-color: rgba(88, 88, 89,.8);
+		color: #ffffff; 
+	}
+
+
+
+
+.slide_img{z-index: -1;}
+
+	#i1:checked ~ #one  ,
+	#i2:checked ~ #two  ,
+	#i3:checked ~ #three
+	{z-index: 9; animation: scroll 1s ease-in-out;}
+
+
+
+@keyframes scroll{
+	0%{	opacity:.4;}
+	100%{opacity:1;}
+}		
